@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../assets/css/style.css";
 import Logo from '../assets/images/Ampais-heading.png';
 import "../assets/vendor/aos/aos.css";
@@ -11,11 +11,11 @@ import "../assets/vendor/swiper/swiper-bundle.min.css";
 import "../style.css";
 
 const Header = () => {
-  const location = useLocation();  
+  // const location = useLocation();  
 
-  const isActive = (pathname) => {
-    return location.pathname === pathname ? " active" : "";
-  }
+  // const isActive = (pathname) => {
+  //   return location.pathname === pathname ? " active" : "";
+  // }
   
   return (
     <>
