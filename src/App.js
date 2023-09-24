@@ -1,11 +1,13 @@
 import "./App.css";
-import About from "./pages/About.jsx";
-import Contact from "./pages/Contact.jsx";
 import Footer from "./pages/Home/Components/Footer";
 import Header from "./pages/Home/Components/Header";
 import Home from "./pages/Home/Home.jsx";
-import Portfolio from "./pages/Portfolio.jsx";
-import Services from "./pages/Services.jsx";
+import "./pages/Home/assets/vendor/aos/aos.css";
+import "./pages/Home/assets/vendor/bootstrap-icons/bootstrap-icons.css";
+import "./pages/Home/assets/vendor/bootstrap/css/bootstrap.min.css";
+import "./pages/Home/assets/vendor/glightbox/css/glightbox.min.css";
+import "./pages/Home/assets/vendor/remixicon/remixicon.css";
+import "./pages/Home/assets/vendor/swiper/swiper-bundle.min.css";
 
 import {
   Route,
@@ -20,10 +22,6 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/services" element={<Services />}></Route>
-          <Route path="/potfolio" element={<Portfolio />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
           <Route path="/*" element={<Home />}></Route>
         </Routes>
         <Footer />

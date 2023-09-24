@@ -2,12 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/style.css";
 import Logo from '../assets/images/ampais-logo.png';
-import "../assets/vendor/aos/aos.css";
-import "../assets/vendor/bootstrap-icons/bootstrap-icons.css";
-import "../assets/vendor/bootstrap/css/bootstrap.min.css";
-import "../assets/vendor/glightbox/css/glightbox.min.css";
-import "../assets/vendor/remixicon/remixicon.css";
-import "../assets/vendor/swiper/swiper-bundle.min.css";
 import "../style.css";
 
 const Footer = () => {
@@ -35,13 +29,6 @@ const Footer = () => {
       },
     ],
     groups: [],
-    address: {
-      line1: "Hitech City",
-      city: "Hyderabad",
-      pincode: "500081",
-      state: "Telangana",
-      country: "India",
-    },
     phone: "9340524985, 9907814944, 9516873307",
     email: "ampaisconstruction@gmail.com",
   };
@@ -55,7 +42,7 @@ const Footer = () => {
               <div className="col-lg-5 col-md-12 footer-info">
                 <Link to="/" className="logo d-flex align-items-center">
                   <img src={footerConfig.logo} alt="" />
-                  <span>{footerConfig.companyName}</span>
+                  <div style={{textDecoration: 'none', color: 'black', fontSize: '24px'}}>{footerConfig.companyName}</div>
                 </Link>
                 <p>{footerConfig.description} <br />
                  For more information contact us on - <strong>ampaisconstruction@gmail.com</strong></p>
